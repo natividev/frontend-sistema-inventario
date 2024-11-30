@@ -73,11 +73,11 @@
         <div class="row mb-3">
             <div class="col-md-4">
                 <label for="fechaIngresoEquipo" class="form-label">Fecha Ingreso Equipo</label>
-                <input type="date" id="fechaIngresoEquipo" class="form-control">
+                <input type="date" id="fechaIngresoEquipo" class="form-control" required>
             </div>
             <div class="col-md-4">
                 <label for="fechaAsignado" class="form-label">Fecha Asignado</label>
-                <input type="date" id="fechaAsignado" class="form-control">
+                <input type="date" id="fechaAsignado" class="form-control" required>
             </div>
             <div class="col-md-4">
                 <label for="fechaDescarte" class="form-label">Fecha Descarte</label>
@@ -157,7 +157,7 @@
 
     // Validaci�n de campos obligatorios
     if (!inventario.sedeId || !inventario.edificioId || !inventario.nivelId || !inventario.areaId ||
-        !inventario.equipoId || !inventario.especificacionId || !inventario.empleadoId || !inventario.direccionIp || !inventario.fechaIngresoEquipo) {
+        !inventario.equipoId || !inventario.especificacionId || !inventario.empleadoId || !inventario.direccionIp || !inventario.fechaIngresoEquipo || !inventario.fechaAsignado) {
         Swal.fire('Advertencia', 'Complete todos los campos obligatorios antes de continuar.', 'warning');
         return;
     }
