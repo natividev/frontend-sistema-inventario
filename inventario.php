@@ -101,7 +101,7 @@
     </div>
 
     <script>
-        const API_BASE_URL = 'http://localhost:5001/api/';
+        const API_BASE_URL = 'http://31.220.97.169:5000/api/';
 
         async function cargarDatosIniciales() {
             try {
