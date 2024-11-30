@@ -222,15 +222,15 @@
                     const row = tableBody.insertRow();
                     row.innerHTML = `
                         <td>${item.id}</td>
-                        <td>${item.sede.nombre}</td>
-                        <td>${item.edificio.nombre}</td>
-                        <td>${item.nivel.nombre}</td>
-                        <td>${item.area.nombre}</td>
-                        <td>${item.equipo.nombre}</td>
+                        <td>${item?.sede?.nombre ?? 'Sin Sede'}</td>
+                        <td>${item?.edificio?.nombre ?? 'Sin Edificio'}</td>
+                        <td>${item?.nivel?.nombre}</td>
+                        <td>${item?.area?.nombre}</td>
+                        <td>${item.equipo?.nombre}</td>
                         <td>${item.especificacion.descripcion}</td>
                         <td>${item.direccion_ip}</td>
                         <td>${item.estado}</td>
-                        <td>${item.empleado.nombre}</td>
+                        <td>${item?.empleado?.nombre}</td>
                         <td>${item.administrativo ? 'Si' : 'No'}</td>
                         <td>${item.academico ? 'Si' : 'No'}</td>
                         <td>${item.fecha_ingreso_equipo}</td>
